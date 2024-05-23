@@ -18,6 +18,6 @@ if weekday == 1:
         connection.starttls()
         connection.login(my_email, password)
         connection.sendmail(from_addr=my_email,
-                            to_addrs="janhavi.rewdekar.t21028@sophiacollege.edu.in",
+                            to_addrs=my_email,
                             msg=f"Subject: MONDAY MOTIVATION\n\n{quote}"
                             )
